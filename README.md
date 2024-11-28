@@ -43,3 +43,36 @@ The **Book Moth's Club** website includes the following features:
    - Fully responsive interface for seamless browsing across devices.
 
 ---
+
+## 🛠️ Technology Stack
+
+The website is built using the following technologies:
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB
+- **Authentication**: Passport.js
+- **Styling**: Bootstrap 5 and custom CSS
+- **Version Control**: Git and GitHub
+
+---
+
+## 🎯 Goals and Objectives
+
+The primary objectives of this project are:
+
+1. To provide a welcoming digital community for book enthusiasts.
+2. To offer tools for discovering, discussing, and tracking books.
+3. To practice and demonstrate web development skills in both frontend and backend programming.
+
+---
+
+## 📋 How to Run the Project
+
+Follow these steps to set up and run the **Book Moth's Club** project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/book-moths-club.git
+   cd book-moths-club
+   ```
