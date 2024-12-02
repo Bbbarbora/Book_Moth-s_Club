@@ -1,0 +1,16 @@
+{
+  "name": "book_moth-s_club",
+  "version": "1.0.0",
+  "description": "Welcome to the **Book Moth's Club** project repository! This project is a beautifully designed website created to bring book lovers together, providing a digital platform for readers to connect, discuss, and explore new books.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
