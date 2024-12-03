@@ -1,4 +1,4 @@
-@use '../abstracts';
+
 
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
@@ -10,6 +10,8 @@
 html {
   box-sizing: border-box;
 }
+
+
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -26,12 +28,12 @@ html {
 /**
  * Basic styles for links
  */
-a {
-  color: abstracts.$brand-color;
-  text-decoration: none;
+// a {
+//   color: abstracts.$brand-color;
+//   text-decoration: none;
 
-  @include abstracts.on-event {
-    color: abstracts.$text-color;
-    text-decoration: underline;
-  }
-}
+//   @include abstracts.on-event {
+//     color: abstracts.$text-color;
+//     text-decoration: underline;
+//   }
+// }

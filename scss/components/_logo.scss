@@ -1,0 +1,29 @@
+@use '../base/colors.scss';
+
+
+
+body {
+    background-color: colors.$primary-color;
+  }
+
+.header__logo {
+  display: inline-block;
+      text-decoration: none;
+      border: 2px solid transparent;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  
+}
+
+.header__logo:focus {
+  outline: none; /* Remove default focus outline */
+  background-color: #f0e68c; /* Light yellow background */
+  border-color: #ff4500; /* Red-orange border */
+}
+
+.header__logo:focus svg path {
+  fill: #ff4500; /* Change the color of paths inside SVG */
+}
+
+.header__logo:focus text {
+  fill: #ffffff; /* Change the text color */
+}
