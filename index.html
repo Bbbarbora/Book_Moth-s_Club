@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0403704970.js" crossorigin="anonymous"></script>
     <title>Book Moth's Club Home page</title>
 </head>
 <body>
@@ -113,20 +117,35 @@
   </a>
 
 
-  <a href="/" class="header__logo" tabindex="0">
-    <svg width="150" height="150" class="header__logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 150">
-      <path d="M22.57,71.48c0.02,0.51,0.01,1.01..." />
-      <path d="M77.6,69.02c0.03-0.22,0.04-0.45..." />
-      <text x="50" y="110" font-family="Brush Script MT, Brush Script Std, cursive" font-size="20" font-weight="700" text-anchor="middle" fill="currentColor">
-        Book Moth's Club
-      </text>
-    </svg>
-</a>
+
 
   
   <footer>
+    <div class="newsletter">
+      <div class="newsletter__offer">
+        <h2 class="newsletter__title">Connect</h2>
+        <p class="newsletter__text">Sign up for the Bookclub newsletter to get monthly reading recs, book club hacks, epic giveaways, and all the bookish joy you can handle (minus the paper cuts).</p>
+      </div>
 
-</footer>
+      <form action="/newsletter_subscription.html" method="post" class="newsletter__form">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <button type="submit" name="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+              <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </footer>
 
     
 </body>
