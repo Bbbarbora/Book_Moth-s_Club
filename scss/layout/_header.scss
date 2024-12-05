@@ -1,25 +1,31 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-@use '/scss/base/colors'
+@use '../base/colors';
+
 
 
 .header__nav-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
     }
   
-//     li { display: inline-block; }
+.header__nav-item { 
+  display: inline-block; 
+}
   
-//     a {
-//       display: block;
-//       padding: 6px 12px;
-//       text-decoration: none;
-//     }
-//   }
+.header__nav-link {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  }
+
 
 .header__container{
     display: flex;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
   }
+

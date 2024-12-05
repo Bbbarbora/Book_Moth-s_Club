@@ -11,6 +11,10 @@ html {
 /**
  * Basic styles for links
  */
+a {
+  text-decoration: none;
+}
+
 /**
  * Clear inner floats
  */
@@ -45,9 +49,27 @@ html {
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__nav-item {
+  display: inline-block;
+}
+
+.header__nav-link {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
 .header__container {
   display: flex;
   background-color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
