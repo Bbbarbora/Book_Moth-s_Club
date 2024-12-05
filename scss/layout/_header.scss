@@ -1,15 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use '/scss/base/colors'
 
 
-
-// nav {
-//     ul {
-//       margin: 0;
-//       padding: 0;
-//       list-style: none;
-//     }
+.header__nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
   
 //     li { display: inline-block; }
   
