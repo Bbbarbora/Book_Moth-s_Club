@@ -8,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!--font for handwriting text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/0403704970.js" crossorigin="anonymous"></script>
-    <!-- icons -->
+    <!-- favicon icons -->
     <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
     <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
@@ -115,3 +120,36 @@
   <main>
 
   {{content|safe}}
+
+   </main>
+
+  <footer>
+    <div class="newsletter">
+      <div class="newsletter__offer">
+        <h2 class="newsletter__title">Connect</h2>
+        <p class="newsletter__text">Sign up for the Bookclub newsletter to get monthly reading recs, book club hacks, epic giveaways, and all the bookish joy you can handle (minus the paper cuts).</p>
+      </div>
+
+      <form action="/newsletter_subscription/" method="post" class="newsletter__form">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <button type="submit" name="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24">
+              <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </footer>
+
+    
+</body>
+</html>

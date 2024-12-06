@@ -97,6 +97,76 @@ body {
   fill: #ffffff; /* Change the text color */
 }
 
+.bookclub__sticky-note {
+  font-family: "Reenie Beanie";
+  font-weight: bold;
+  font-size: 2rem;
+  background: #ffc;
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  transform: rotate(-6deg);
+  position: absolute;
+  top: 10%;
+  right: 18%;
+}
+
 body {
   background-color: #9B1B30;
+  font-family: "Montserrat";
+}
+
+.hero {
+  background-image: url("/images/kniznica_backround (small).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__container {
+  text-align: center;
+  width: 60%;
+  max-width: 800px;
+  margin: 30px 0;
+  background-color: rgba(217, 217, 217, 0.77); /* Semi-transparent white overlay */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero__text-container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.hero__text {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.bookclub__card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.bookclub__item {
+  position: relative; /* Container for positioning */
+  width: 80%; /* Set a default width for the book */
+  max-width: 1200px; /* Limit the maximum size to mimic a real book */
+}
+
+.bookclub__image {
+  max-width: 100%;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

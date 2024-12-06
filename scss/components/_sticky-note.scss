@@ -1,0 +1,41 @@
+@use '../base/fonts.scss';
+
+.bookclub__sticky-note {
+    font-family: fonts.$hand-text;
+    font-weight: bold;
+    font-size: 5rem;
+    background:#ffc;
+    display:block;
+    height:40%;
+    width:40%;
+    padding:1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+    position: absolute;
+    top: 10%;
+    right: 18%;
+    
+}
+
+@media (max-width: 1024px) {
+    .bookclub__sticky-note {
+        font-size: 1.4em; /* Scale down text */
+        height: 45%; /* Adjust sticky note size */
+        width: 45%;
+        top: 12%; /* Adjust position */
+        left: 12%;
+      }
+
+@media (max-width: 768px) {
+        .bookclub__item {
+          width: 40%; /* Book size for tablets */
+        }
+      
+        .bookclub__sticky-note {
+          font-size: 1.2em; /* Scale down text */
+          height: 50%; /* Adjust sticky note size */
+          width: 50%;
+          top: 15%; /* Adjust position */
+          left: 15%;
+        }
+    }
