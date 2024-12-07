@@ -56,10 +56,6 @@ a {
   align-items: center;
 }
 
-.menu__item {
-  border-bottom: 1px solid whitesmoke;
-}
-
 .menu__link {
   display: block;
   padding: 8px 15px;
@@ -68,7 +64,19 @@ a {
   color: white;
 }
 
-.menu__link:hover {
+.menu__item--active,
+.menu__item.focus-within {
+  background-color: #ff4500;
+}
+
+.menu__item--active > .menu__link,
+.menu__item:focus-within {
+  background-color: #ff4500;
+  color: whitesmoke;
+}
+
+.menu__link:hover,
+.menu__item:hover {
   background-color: rgba(217, 39, 69, 0.9058823529);
 }
 
@@ -246,4 +254,71 @@ body {
 .bookclub__image {
   max-width: 100%;
   display: block;
+}
+
+.faq {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.faq__title-main {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.faq__figure {
+  margin: unset;
+}
+
+.faq__image {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.faq__question {
+  font-size: 20px;
+  color: rgb(30, 26, 26);
+  list-style: none;
+}
+
+.faq__card {
+  display: flex;
+  background-color: white;
+  max-width: 70.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 50px 50px -20px black;
+  width: min(100%, 100% - 10px);
+  gap: 0 1rem;
+}
+
+.faq__container {
+  padding: 65px 95px 65px 0;
+}
+
+.faq__item {
+  border-bottom: 1px solid #66111F;
+  padding-block: 16px;
+}
+.faq__item[open] > .faq__question {
+  font-weight: 700;
+}
+
+.faq__question {
+  cursor: pointer;
+  position: relative;
+}
+.faq__question:hover, .faq__question:focus {
+  color: rgba(217, 39, 69, 0.9058823529);
+}
+.faq__question::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: url(../../images/red-arrow-down-11380.svg);
 }/*# sourceMappingURL=style.css.map */

@@ -11,12 +11,6 @@
   align-items: center;
 }
 
-
-  
-.menu__item { 
-  // display: inline-block; 
-  border-bottom: 1px solid whitesmoke;
-}
   
 .menu__link {
   display: block;
@@ -26,7 +20,19 @@
   color: white;
   }
 
-  .menu__link:hover {
+.menu__item--active,
+.menu__item.focus-within {
+  background-color: #ff4500;
+}
+
+.menu__item--active >.menu__link,
+.menu__item:focus-within {
+    background-color: #ff4500;
+    color: whitesmoke;
+    }
+
+  .menu__link:hover, 
+  .menu__item:hover, {
     background-color: colors.$hover-color;
   }
 
@@ -57,7 +63,6 @@
 .menu__toggler {
   cursor: pointer;
   z-index: 1000;
-
 }
 
 .menu__list {
@@ -73,6 +78,7 @@
 .menu__item { 
   border-bottom: 1px solid whitesmoke;
     }
+
 
 
 @media screen and (min-width: 800px) {
@@ -92,6 +98,8 @@
     border-right: 1px solid whitesmoke;
       }
 }
+
+ 
 
 
 
