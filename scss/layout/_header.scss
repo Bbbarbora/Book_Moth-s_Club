@@ -2,30 +2,96 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 @use '../base/colors';
+@use '../base/fonts';
+
+.header__container{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+  
+.menu__item { 
+  // display: inline-block; 
+  border-bottom: 1px solid whitesmoke;
+}
+  
+.menu__link {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: fonts.$font-base;
+  color: white;
+  }
+
+  .menu__link:hover {
+    background-color: colors.$hover-color;
+  }
+
+.menu{
+  position: relative;
+}
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999999px;
+}
+
+.menu__checkbox:checked~ .menu__list {
+  display: block;
+  position: fixed; /* Make it cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 999; /* Ensure it appears above other elements */
+  background-color: colors.$secondary-color; /* Set the background color */
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport */
 
 
 
-.header__nav-list {
+}
+
+.menu__toggler {
+  cursor: pointer;
+  z-index: 1000;
+
+}
+
+.menu__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: colors.$secondary-color;
+  transition: transform 0.3s ease;
+
     }
-  
-.header__nav-item { 
-  display: inline-block; 
+
+.menu__item { 
+  border-bottom: 1px solid whitesmoke;
+    }
+
+
+@media screen and (min-width: 800px) {
+  .menu__toggler{
+    display: none;
+  }
+
+  .menu__list {
+    display: flex !important;
+    position: static; /* Remove fixed positioning */
+    width: auto; /* Menu occupies only necessary space */
+    height: auto; /* Reset height */
+    flex-direction: row; /* Horizontal layout */
+  }
+  .menu__item { 
+    border-bottom:0;
+    border-right: 1px solid whitesmoke;
+      }
 }
-  
-.header__nav-link {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-  }
 
 
-.header__container{
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-  }
 

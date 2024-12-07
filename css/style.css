@@ -49,22 +49,6 @@ a {
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
-.header__nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header__nav-item {
-  display: inline-block;
-}
-
-.header__nav-link {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-}
-
 .header__container {
   display: flex;
   background-color: white;
@@ -72,6 +56,77 @@ a {
   align-items: center;
 }
 
+.menu__item {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.menu__link {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.menu__link:hover {
+  background-color: rgba(217, 39, 69, 0.9058823529);
+}
+
+.menu {
+  position: relative;
+}
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999999px;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+  position: fixed; /* Make it cover the whole screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 999; /* Ensure it appears above other elements */
+  background-color: #66111F; /* Set the background color */
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+.menu__toggler {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #66111F;
+  transition: transform 0.3s ease;
+}
+
+.menu__item {
+  border-bottom: 1px solid whitesmoke;
+}
+
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex !important;
+    position: static; /* Remove fixed positioning */
+    width: auto; /* Menu occupies only necessary space */
+    height: auto; /* Reset height */
+    flex-direction: row; /* Horizontal layout */
+  }
+  .menu__item {
+    border-bottom: 0;
+    border-right: 1px solid whitesmoke;
+  }
+}
 body {
   background-color: #9B1B30;
 }
@@ -81,6 +136,7 @@ body {
   text-decoration: none;
   border: 2px solid transparent;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-top: 30px;
 }
 
 .header__logo:focus {
@@ -100,11 +156,11 @@ body {
 .bookclub__sticky-note {
   font-family: "Reenie Beanie";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 5rem;
   background: #ffc;
   display: block;
-  height: 10em;
-  width: 10em;
+  height: 40%;
+  width: 40%;
   padding: 1em;
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
   transform: rotate(-6deg);
@@ -113,6 +169,27 @@ body {
   right: 18%;
 }
 
+@media (max-width: 1024px) {
+  .bookclub__sticky-note {
+    font-size: 1.4em; /* Scale down text */
+    height: 45%; /* Adjust sticky note size */
+    width: 45%;
+    top: 12%; /* Adjust position */
+    left: 12%;
+  }
+}
+@media (max-width: 768px) {
+  .bookclub__item {
+    width: 40%; /* Book size for tablets */
+  }
+  .bookclub__sticky-note {
+    font-size: 1.2em; /* Scale down text */
+    height: 50%; /* Adjust sticky note size */
+    width: 50%;
+    top: 15%; /* Adjust position */
+    left: 15%;
+  }
+}
 body {
   background-color: #9B1B30;
   font-family: "Montserrat";
