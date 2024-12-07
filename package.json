@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.82.0"
   }
 }
