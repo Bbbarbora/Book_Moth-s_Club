@@ -1,19 +1,28 @@
 @use '../base/colors.scss';
+@use '../base/fonts.scss';
 
 .faq {
-    display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .faq__title-main {
-    font-size: 40px;
+    font-size: 2rem;
     line-height: 1.5;
     font-weight: bold;
 }
 
+.faq__description{
+    font-size: 1.2rem;
+
+}
+
 .faq__figure {
     margin: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
 }
 
 .faq__image{
@@ -22,25 +31,23 @@
     vertical-align: middle;
 }
 
-.faq__question {
-    font-size: 20px;
-    color: rgb(30, 26, 26);
-    list-style: none;
-}
 
 .faq__card {
     display: flex;
+    flex-direction: column;
     background-color: white;
     max-width: 70.5rem;
     border-radius: 1.5rem;
-    box-shadow: 0px 50px 50px -20px rgba($color: #000000, $alpha: 1.0);
-    width: min(100%,calc(100% - 10px));
-    gap: 0 1rem;
+    box-shadow: 0px 50px 50px -20px rgba(0, 0, 0, 1.0);
+    width: min(100%,calc(100% - 50px));
+    gap: 1rem;
+    margin-top: 40px;
 
 }
 
 .faq__container{
-    padding: 65px 95px 65px 0;
+    padding: 20px;
+    flex: 0 1 auto;
 }
 
 .faq__item{
@@ -50,28 +57,60 @@
     &[open] {
         >.faq__question{
             font-weight: 700;
+       
+       &::after{
+        rotate: 180deg;
+       }
         }
     }
     
 }
 .faq__question{
+    font-size: 1.2rem;
+    color: rgb(30, 26, 26);
+    list-style: none;
     cursor: pointer;
     position: relative;
     
     &:hover,
-    &:focus{
+    &:focus-visible{
         color: colors.$hover-color;
     }
     &::after{
         content: "";
         position: absolute;
-        width: 10px;
+        width: 20px;
         height: 100%;
         right: 0;
         top: 0;
-        background-color: url(../../images/red-arrow-down-11380.svg);
+        background-image: url(/images/red-arrow-down-11380.svg);
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: center;
+        transition: transform .25s linear;
+        display: none;
     }
 
+}
+
+@media screen and (min-width:1200px){
+    .faq__card {
+        flex-direction: row; 
+    }
+
+    .faq__figure {
+        order: 0; 
+    }
+
+    .faq__container {
+        padding: 65px 65px 65px 0; 
+        flex: 0 1 70%; 
+    }
+
+    .faq__question::after {
+        display: block; /* Remove the arrow background for larger screens */
+        
+    }
 
 }
 
