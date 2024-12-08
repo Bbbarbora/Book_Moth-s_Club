@@ -4,11 +4,23 @@
 @use '../base/colors';
 @use '../base/fonts';
 
+
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
 .header__container{
   display: flex;
   background-color: white;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 20px;
 }
 
   
@@ -47,7 +59,7 @@
 
 .menu__checkbox:checked~ .menu__list {
   display: block;
-  position: fixed; /* Make it cover the whole screen */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%; /* Full width */
