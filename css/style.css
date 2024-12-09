@@ -367,4 +367,92 @@ body {
   .faq__question::after {
     display: block; /* Remove the arrow background for larger screens */
   }
+}
+.about__us {
+  border: 1px grey solid;
+  margin: 60px;
+}
+
+.about-us__grid {
+  background-color: #e3e3e3;
+  border: 1px grey solid;
+  margin: 60px;
+  display: grid;
+  grid-template: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.about-us__item--text {
+  background-color: rgba(217, 39, 69, 0.9058823529);
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.abou-us__item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.about-us__item--image1,
+.about-us__item--image2 {
+  min-height: 200px; /* Set a minimum height for image containers */
+}
+
+.about-us__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us__item--image2 {
+  grid-area: 3/1/4/-1;
+}
+
+@media screen and (min-width: 570px) {
+  .about-us__item--text {
+    font-size: 1.5rem;
+    padding: 30px 15%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .about-us__grid {
+    display: grid;
+    grid-auto-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-us__item--image1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .about-us__item--text1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .about-us__item--text2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .about-us__item--image2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .about-us__item--text {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .about-us__item--text {
+    font-size: 1.5rem;
+    padding: 30px 15%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .about-us__grid {
+    margin: 100px 150px;
+  }
 }/*# sourceMappingURL=style.css.map */
