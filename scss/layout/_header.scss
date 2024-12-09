@@ -16,7 +16,9 @@
 
 .header__container{
   display: flex;
-  background-color: white;
+  // background-color: white;
+  background-color: colors.$primary-color;
+
   justify-content: space-between;
   align-items: center;
   width: 100%;
