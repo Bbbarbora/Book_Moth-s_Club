@@ -21,6 +21,7 @@
   align-items: center;
   width: 100%;
   padding: 0 20px;
+  border-bottom: 0.02em solid white;
 }
 
   
@@ -57,16 +58,18 @@
   left: -9999999px;
 }
 
-.menu__checkbox:checked~ .menu__list {
-  display: block;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  z-index: 999; /* Ensure it appears above other elements */
-  background-color: colors.$secondary-color; /* Set the background color */
-  overflow-y: auto; /* Allow scrolling if content exceeds viewport */
+@media screen and (max-width: 500px){
+  
+  .menu__checkbox:checked~ .menu__list {
+    display: block;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 999; /* Ensure it appears above other elements */
+    background-color: colors.$secondary-color; /* Set the background color */
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport */
 
 
 

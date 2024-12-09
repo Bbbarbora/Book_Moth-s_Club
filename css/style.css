@@ -60,6 +60,7 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 0 20px;
+  border-bottom: 0.02em solid white;
 }
 
 .menu__link {
@@ -515,4 +516,5 @@ body {
   .subscription__container {
     display: block;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* General Styles *//*# sourceMappingURL=style.css.map */
