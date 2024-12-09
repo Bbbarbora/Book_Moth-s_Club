@@ -16,9 +16,7 @@
 
 .header__container{
   display: flex;
-  // background-color: white;
   background-color: colors.$primary-color;
-
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -28,7 +26,7 @@
   
 .menu__link {
   display: block;
-  padding: 8px 15px;
+  padding: 15px 25px;
   text-decoration: none;
   font-family: fonts.$font-base;
   color: white;
@@ -46,7 +44,7 @@
     }
 
   .menu__link:hover, 
-  .menu__item:hover, {
+  .menu__item:hover {
     background-color: colors.$hover-color;
   }
 
@@ -95,7 +93,7 @@
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .menu__toggler{
     display: none;
   }
