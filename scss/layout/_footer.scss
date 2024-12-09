@@ -1,3 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+@use '../base/colors';
+@use '../base/fonts';
+
+.footer {
+    background-image: url('/images/Old_books_natalia-y-f5xddISq428-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

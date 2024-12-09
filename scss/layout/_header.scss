@@ -58,7 +58,7 @@
   left: -9999999px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 999px){
   
   .menu__checkbox:checked~ .menu__list {
     display: block;
@@ -70,9 +70,7 @@
     z-index: 999; /* Ensure it appears above other elements */
     background-color: colors.$secondary-color; /* Set the background color */
     overflow-y: auto; /* Allow scrolling if content exceeds viewport */
-
-
-
+    }
 }
 
 .menu__toggler {
