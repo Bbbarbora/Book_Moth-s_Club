@@ -1,0 +1,65 @@
+@use '../base/colors.scss';
+@use '../base/fonts.scss';
+
+.events {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/events_backround.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .events__header {
+    margin-bottom: 3rem;
+  }
+  
+  .events__title {
+    color: #ff0033;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .events__carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .events__card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: left;
+    color: #333;
+  }
+  
+  .events__card-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .events__card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #666;
+  }
+  
+  .events__card-note {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
