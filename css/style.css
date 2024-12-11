@@ -529,6 +529,59 @@ body {
   }
 }
 /* General Styles */
+.hero-book__container {
+  display: flex;
+  margin: 20% auto;
+  max-width: 80%;
+  flex-direction: row;
+}
+
+.hero-book__imagebox {
+  background-image: url("/images/November's picks_cody-board-UMlXDGxY6Kc-unsplash (1) (1).jpg");
+  background-position: center;
+  background-size: cover;
+  flex: 1 0 60%;
+  position: relative;
+  width: 60%;
+  max-width: 500px;
+  height: 0;
+  padding-top: 130%; /* Aspect ratio of 4:3 (height is 75% of the width) */
+  border-radius: 8px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-boook__frame {
+  border: 3px solid white;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+.hero-book__img-title {
+  color: white;
+  background-color: #373a30;
+  font-size: 1.8em;
+  padding: 7%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-book__container {
+    flex-direction: column;
+    margin: 10% auto;
+  }
+  .hero-book__imagebox {
+    width: 90%; /* On smaller screens, reduce the width of the book */
+    padding-top: 100%; /* Adjust the aspect ratio for a more square look */
+  }
+  .hero-book__img-title {
+    font-size: 1.2rem; /* Even smaller title font size */
+    margin-top: 30%; /* Adjust vertical position further */
+  }
+}
 .community__grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
