@@ -381,21 +381,21 @@ body {
     display: block; /* Remove the arrow background for larger screens */
   }
 }
-.about__us {
+.about-us {
   display: grid;
   place-items: center;
-  background-color: #9B1B30;
-  min-height: 100vh; /* Full viewport height */
+  background-color: black;
+  min-height: 100vh;
   margin: 0;
   max-height: 100%;
 }
 
 .about-us__grid {
-  background-color: black;
   border: 1px grey solid;
   margin: 60px;
   display: grid;
   grid-template: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 30px;
 }
 
 .about-us__item--text {
@@ -426,6 +426,11 @@ body {
 
 .about-us__item--image2 {
   grid-area: 3/1/4/-1;
+  border-radius: 0 0 20px 0;
+}
+
+.about-us__item--image1 {
+  border-radius: 20px 0 0 0;
 }
 
 @media screen and (min-width: 570px) {
