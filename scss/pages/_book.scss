@@ -4,29 +4,49 @@
 
 /* General Styles */
 
+.hero-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    container-type: inline-size;
+   
+    
+}
+
 
 .hero-book__container{
     display: flex;
-    margin: 20% auto;
-    max-width: 80%;
+    margin: 10% auto;
+    justify-content: center;
     flex-direction: row;
+    align-items: stretch;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 12px;
 }
 
+.hero-book__imagebox,
+.hero-book__description-box{
+    flex: 1 0 50%;
+    max-width: 450px;
+    
+}
+
+
 .hero-book__imagebox{
+    container-type: box-size;
     background-image: url('/images/November\'s\ picks_cody-board-UMlXDGxY6Kc-unsplash\ \(1\)\ \(1\).jpg');
     background-position: center;
     background-size: cover;
-    flex: 1 0 60%;
     position: relative;
-    width: 60%; 
-    max-width: 500px; 
-    height: 0;
-    padding-top: 130%; /* Aspect ratio of 4:3 (height is 75% of the width) */
-    border-radius: 8px; 
+    width: 100%; 
+    aspect-ratio: 2/3;
+    border-radius: 12px 0 0 12px; 
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
 }
 
-.hero-boook__frame{
+.hero-book__frame{
     border: 3px solid white;
     position: absolute;
     left: 10%;
@@ -46,20 +66,62 @@
     text-align: center;
 }
 
+.hero-book__description-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 0 12px 12px 0;
+}
 
-@media screen and (max-width: 768px) {
+.hero-book__title{
+    color: colors.$secondary-color;
+    font-size: 2rem;
+}
+
+.hero-book__description-text{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+
+// Responsive Design Based on Container Ratios
+@container (max-width: 700px) {
     .hero-book__container {
         flex-direction: column;
         margin: 10% auto;
+        max-width: 90%;
+        align-items: center;
+        width: 95%
+       
     }
+
 
     .hero-book__imagebox {
-        width: 90%; /* On smaller screens, reduce the width of the book */
-        padding-top: 100%; /* Adjust the aspect ratio for a more square look */
+
+        max-width: 100%;
+        border-radius: 12px 12px 0 0; 
     }
 
-    .hero-book__img-title {
-        font-size: 1.2rem; /* Even smaller title font size */
-        margin-top: 30%; /* Adjust vertical position further */
+    .hero-book__description-box {
+        max-width: 100%;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0 0 12px 12px; 
+    }
+
+
+    .hero-book__title {
+        font-size: 1.5rem;
+    }
+
+    .hero-book__author {
+        font-size: 1.2rem;
+    }
+
+    .hero-book__description-text {
+        font-size: 0.9rem;
     }
 }

@@ -3,24 +3,27 @@
 
 
 .about__us{
-    border: 1px grey solid;
-    margin: 60px;
+    display: grid;
+    place-items: center;
+    background-color: colors.$primary-color;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; 
+    max-height: 100%;
 
 
 }
 
 .about-us__grid{
-    background-color: #e3e3e3;
+    background-color: black;
     border: 1px grey solid;
     margin: 60px;
     display: grid;
-    // grid-template: repeat(4,1fr);
     grid-template: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 
 .about-us__item--text{
-    background-color: colors.$hover-color;
+    background-color: colors.$primary-color;
     color: white;
     font-family: fonts.$font-base;
     font-size: 1.2rem;
@@ -28,13 +31,7 @@
     text-align: center;
 }
 
-// .about-us__item{
-//     padding: 20px;
-//     display: flex; 
-//     align-items: center;
-//     justify-content: center; 
-//     min-height: 150px; 
-// }
+
 
 .about-us__item--image1,
 .about-us__item--image2 {
