@@ -773,7 +773,7 @@ body {
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 2rem;
+  padding-top: calc(2rem + 188px);
 }
 
 .events__header {
@@ -785,6 +785,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-height: 100%;
 }
 
 .events__carousel {
@@ -793,6 +794,7 @@ body {
   grid-gap: 2rem;
   width: 100%;
   max-width: 1200px;
+  max-height: 90%;
 }
 
 .events__card {
