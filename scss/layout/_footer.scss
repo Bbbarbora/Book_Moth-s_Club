@@ -4,9 +4,93 @@
 @use '../base/colors';
 @use '../base/fonts';
 
-.footer {
-    background-image: url('/images/Old_books_natalia-y-f5xddISq428-unsplash\ \(1\).jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
+
+footer {
+    background-color: colors.$primary-color;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .newsletter {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter form {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-up {
+    margin: 20px 0;
+  }
+  
+  .page-up button {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .page-up button:hover {
+    background-color: #555;
+  }
+
+  
+  .copyright {
+    font-size: 14px;
+    color: #333;
+  }
+
+  @media (max-width: 600px) {
+    .newsletter input[type="email"] {
+      width: 100%;
+    }
+  
+    .social-links img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .page-up button {
+      width: 100%;
+      padding: 10px;
+    }
+  }

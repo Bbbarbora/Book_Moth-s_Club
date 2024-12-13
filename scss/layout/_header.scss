@@ -12,6 +12,7 @@
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
+
 }
 
 .header__container{
@@ -29,28 +30,33 @@
   display: block;
   padding: 15px 25px;
   text-decoration: none;
+  height: 100%;
   font-family: fonts.$font-base;
   color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  
   }
 
 .menu__item--active,
 .menu__item.focus-within {
-  background-color: #ff4500;
+  background-color: black;
 }
 
-.menu__item--active >.menu__link,
-.menu__item:focus-within {
-    background-color: #ff4500;
-    color: whitesmoke;
-    }
+// .menu__item--active >.menu__link,
+// .menu__item:focus-within {
+//     background-color: black;
+//     }
 
   .menu__link:hover, 
   .menu__item:hover {
     background-color: colors.$hover-color;
+
   }
 
 .menu{
   position: relative;
+ 
 }
 
 .menu__checkbox {
@@ -83,13 +89,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: colors.$secondary-color;
-  transition: transform 0.3s ease;
+  
+  
 
     }
 
 .menu__item { 
   border-bottom: 1px solid whitesmoke;
+  text-align: center;
+  
     }
 
 
@@ -101,15 +109,24 @@
 
   .menu__list {
     display: flex !important;
-    position: static; /* Remove fixed positioning */
-    width: auto; /* Menu occupies only necessary space */
-    height: auto; /* Reset height */
-    flex-direction: row; /* Horizontal layout */
+    position: static; 
+    width: auto; 
+    height: auto; 
+    flex-direction: row; 
   }
   .menu__item { 
     border-bottom:0;
     border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-radius: 20px;
       }
+
+  .menu__link {
+    border-radius: 20px;
+    // background-color: colors.$secondary-color;
+    transition: transform 0.3s ease;
+  }
+
 }
 
  
