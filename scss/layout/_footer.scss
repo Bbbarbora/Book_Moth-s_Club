@@ -10,7 +10,9 @@ footer {
     background-color: colors.$primary-color;
     padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    z-index: 10; /* Stay above other content */
+    position: relative;
+  
   }
   
   .newsletter {

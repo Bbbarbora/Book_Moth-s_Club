@@ -49,7 +49,8 @@ footer {
   background-color: #9B1B30;
   padding: 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  z-index: 10; /* Stay above other content */
+  position: relative;
 }
 
 .newsletter {
@@ -157,16 +158,40 @@ footer {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  position: relative;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.menu__item--active,
-.menu__item.focus-within {
+.menu__item--active > .menu__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
   background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 5px;
+  transition: width 0.3s ease;
+}
+
+.menu__link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(217, 39, 69, 0.9058823529); /* Optional hover underline color */
+  margin-top: 5px;
 }
 
 .menu__link:hover,
 .menu__item:hover {
   background-color: rgba(217, 39, 69, 0.9058823529);
+  color: #9B1B30; /* Change text color on hover */
+  color: black;
+  transform: scale(1.1);
 }
 
 .menu {
@@ -221,8 +246,6 @@ footer {
   }
   .menu__item {
     border-bottom: 0;
-    border-right: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
     border-radius: 20px;
   }
   .menu__link {
@@ -319,7 +342,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   max-height: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -941,7 +964,7 @@ body {
 .events {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: auto;
   background-image: url("/images/events_backround.JPG");
   background-size: cover;
   background-position: center;
@@ -972,7 +995,8 @@ body {
   grid-gap: 2rem;
   width: 100%;
   max-width: 1200px;
-  max-height: 90%;
+  max-height: 75vh;
+  overflow: auto;
 }
 
 .events__card {

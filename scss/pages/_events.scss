@@ -4,7 +4,7 @@
 .events {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: auto;
     background-image: url('/images/events_backround.JPG');
     background-size: cover;
     background-position: center;
@@ -36,7 +36,8 @@
     grid-gap: 2rem;
     width: 100%;
     max-width: 1200px;
-    max-height: 90%;
+    max-height: 75vh;
+    overflow: auto;
   }
   
   .events__card {
