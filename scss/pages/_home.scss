@@ -5,7 +5,6 @@
 @use '../base/colors.scss';
 
 body {
-    // background-color: colors.$primary-color;
     background-image: linear-gradient(to right, #d3d3d3, #e8e8e8, #f2f2f2);
     font-family: colors.$font-base;
   }
@@ -58,22 +57,50 @@ body {
 
 // styling section book club actual event
 
+.bookclub__container {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  -moz-box-align: 90%;
+  background-color: colors.$primary-color
+}
+
+.bookclub__main-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
 .bookclub__card{
   position: relative;
   display: flex; 
-  justify-content: center; 
+  justify-content: center;
   align-items: center; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 40px auto;
+  max-width: 900px;
 
 }
 
 .bookclub__item {
-  position: relative; /* Container for positioning */
-  width: 80%; /* Set a default width for the book */
-  max-width: 1200px; /* Limit the maximum size to mimic a real book */ 
+  position: relative; 
+  flex: 1 1 50%;
+  margin-right: 10px; 
+  max-width: 400px;
+  width: 100%;
+
+
 }
 
 .bookclub__image {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   display: block;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
