@@ -1136,16 +1136,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-  header h1 {
+  .resources__title {
     font-size: 1.8rem;
   }
-  main {
-    padding: 15px;
-  }
-  main li {
+  .resources__item {
     font-size: 0.95rem;
   }
 }/*# sourceMappingURL=style.css.map */
