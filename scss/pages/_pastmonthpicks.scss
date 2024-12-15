@@ -1,0 +1,52 @@
+
+.monthly-picks{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    color: #150202;
+    text-align: center;
+}
+
+.error-container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.error-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.error-text {
+    font-size: 1rem;
+    margin: 15px 0;
+    font-weight:500;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-button {
+    margin-top: 20px;
+}
+
+.home-button svg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+

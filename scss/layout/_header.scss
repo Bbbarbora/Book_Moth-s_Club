@@ -65,19 +65,16 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: colors.$hover-color; /* Optional hover underline color */
+  // background-color: colors.$hover-color; /* Optional hover underline color */
+  background-color: white;
   margin-top: 5px;
 }
 
 
-// .menu__item--active >.menu__link,
-// .menu__item:focus-within {
-//     background-color: black;
-//     }
 
   .menu__link:hover, 
   .menu__item:hover {
-    background-color: colors.$secundary-color;
+    background-color: colors.$hover-color;
     color: black;
     transform: scale(1.1);
 
